@@ -1,0 +1,21 @@
+import matplotlib.pyplot as plt
+
+# Plot Moving Averages
+plt.figure(figsize=(14,7))
+plt.plot(data['Close'], label='Close Price')
+plt.plot(data['SMA'], label='SMA 30')
+plt.legend(loc='upper left')
+plt.show()
+
+# Plot RSI
+plt.figure(figsize=(14,7))
+plt.plot(data['RSI'], label='RSI')
+plt.legend(loc='upper left')
+plt.show()
+
+# Plot MACD
+plt.figure(figsize=(14,7))
+plt.plot(data['MACD'], label='MACD')
+plt.plot(data['MACD_signal'], label='Signal Line')
+plt.legend(loc='upper left')
+plt.show()
